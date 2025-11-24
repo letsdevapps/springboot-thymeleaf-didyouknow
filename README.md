@@ -8,6 +8,10 @@
 
 	http://localhost:8080/
 
+	http://localhost:8080/didyouknow
+
+	http://localhost:8080/awards
+
 ## Api
 
     http://localhost:8080/api/didyouknow
