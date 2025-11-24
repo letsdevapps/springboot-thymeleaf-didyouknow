@@ -4,7 +4,11 @@
 
     java -jar target/pro-0.0.1-SNAPSHOT.jar 
 
-# Endpoints
+## View
+
+	http://localhost:8080/
+
+## Api
 
     http://localhost:8080/api/didyouknow
 

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<body>
+	<div th:fragment="awards-nobel-popup">
+<!-- 		<h2><a href="#" th:href="@{/awards}" th:text="#{awards}" class="a"></a></h2> -->
+<!-- 		<h3 th:text="#{awards}" class="font-good-times"></h3> -->
+		<div class="w3-card" style="padding: 10px;">
+			<b><span th:text="${awards.category.description}"></span>
+			<span th:text="${awards.year}"></span></b>
+			<span th:text="${awards.author}"></span>
+			<span th:text="${awards.title}"></span>
+		</div>
+	</div>
+
+	<div th:fragment="awards">
+<!-- 		<h3 th:text="#{awards}" class="font-good-times"></h3> -->
+		<div class="w3-card">
+			<div th:each="a : ${awardsList}" style="padding: 10px;">
+				<b><span th:text="${a.category.description}"></span> <span th:text="${a.year}"></span></b>
+				<span th:text="${a.author}"></span> <span th:text="${a.title}"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

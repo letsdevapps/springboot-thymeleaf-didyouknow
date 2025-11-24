@@ -1,0 +1,8 @@
+@font-face {
+	font-family: goodTimes;
+	src: url('../font/good_times/good times rg.ttf');
+}
+
+.font-good-times {
+	font-family: 'goodTimes';
+}

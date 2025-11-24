@@ -9,6 +9,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import com.pro.model.Awards;
+import com.pro.model.DidYouKnow;
 import com.pro.repository.AwardsRepository;
 
 @Service
@@ -19,6 +20,11 @@ public class AwardsService {
 
 	public Optional<Awards> findById(Long id) {
 		return awardsDAO.findById(id);
+	}
+	
+	public Optional<Awards> pickRandom() {
+		Long randomAward = (long) (1L + Math.random() * (8L - 1L));
+		return awardsDAO.findById(randomAward);
 	}
 
 	public List<Awards> findAll() {

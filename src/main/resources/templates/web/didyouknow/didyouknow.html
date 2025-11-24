@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<body>
+	<div th:fragment="didyouknow-popup">
+<!-- 		<h2><a href="#" th:href="@{/didyouknow}" th:text="#{didyouknow.q}" class="a"></a></h2> -->
+<!-- 		<h3 th:text="#{didyouknow.q}" class="font-good-times"></h3> -->
+		<div class="w3-card" style="padding: 10px;">
+			<span th:text="${didyouknow.title}" style="font-weight: bold;"></span>
+			<br>
+			<span th:text="${didyouknow.text}"></span>
+		</div>
+	</div>
+
+	<div th:fragment="didyouknow">
+<!-- 		<h3 th:text="#{didyouknow}" class="font-good-times"></h3> -->
+		<div class="w3-card">
+			<div th:each="d : ${didyouknowList}" style="padding: 10px;">
+				<span th:text="${d.title}" style="font-weight: bold;"></span>: <span th:text="${d.text}"></span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
