@@ -4,6 +4,14 @@
 
     java -jar target/pro-0.0.1-SNAPSHOT.jar 
 
+## Docker
+
+	docker build -t springboot-thymeleaf-didyouknow .
+
+	docker run -it --rm -p 8080:8080 springboot-thymeleaf-didyouknow
+
+	docker run -it --rm -p 8080:8080 springboot-thymeleaf-didyouknow:latest bash
+
 ## View
 
 	http://localhost:8080/
