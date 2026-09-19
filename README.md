@@ -1,8 +1,19 @@
-# Springboot Did-You-Know
+# Springboot Thymeleaf Did-You-Know
+
+![GitHub release](https://img.shields.io/github/v/release/letsdevapps/springboot-thymeleaf-didyouknow)
+![GitHub last commit](https://img.shields.io/github/last-commit/letsdevapps/springboot-thymeleaf-didyouknow)
+
+![Java](https://img.shields.io/badge/java-21+-brightgreen)
+![Springboot](https://img.shields.io/badge/springboot-3+-brightgreen)
+
+![Docker](https://img.shields.io/badge/docker-enabled-blue)
+![Status](https://img.shields.io/badge/status-active-success)
+
+## Maven
 
     mvn clean package
 
-    java -jar target/pro-0.0.1-SNAPSHOT.jar 
+    java -jar target/springboot-thymeleaf-didyouknow.jar 
 
 ## Docker
 
@@ -16,19 +27,19 @@
 
 	http://localhost:8080/
 
-	http://localhost:8080/didyouknow
+	GET /didyouknow
 
-	http://localhost:8080/awards
+	GET /awards
 
 ## Api
 
-    http://localhost:8080/api/didyouknow
+    GET /api/didyouknow
 
-    http://localhost:8080/api/didyouknow/all
+    GET /api/didyouknow/all
 
-    http://localhost:8080/api/didyouknow/random
+    GET /api/didyouknow/random
 
-    http://localhost:8080/api/awards
+    GET /api/awards
 
-    http://localhost:8080/api/awards/all
+    GET /api/awards/all
 
